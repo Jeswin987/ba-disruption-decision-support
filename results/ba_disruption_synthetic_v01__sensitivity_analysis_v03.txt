@@ -1,0 +1,35 @@
+BA DISRUPTION SYNTHETIC v0.3 — SENSITIVITY ANALYSIS
+============================================================
+Rows: 9,951; events: 1,000
+Evaluation split: fixed event-level 75/25 split, random_state=42.
+
+Key question: does the prototype remain useful when core simulator assumptions change?
+
+baseline_v02: severe=0.113, op ROC-AUC=0.741, op+Forage ROC-AUC=0.743, increment=+0.002
+forecast_error_sigma_10min: severe=0.113, op ROC-AUC=0.754, op+Forage ROC-AUC=0.756, increment=+0.002
+forecast_error_sigma_25min: severe=0.113, op ROC-AUC=0.743, op+Forage ROC-AUC=0.744, increment=+0.002
+forecast_error_sigma_40min: severe=0.113, op ROC-AUC=0.743, op+Forage ROC-AUC=0.745, increment=+0.002
+forecast_error_sigma_60min: severe=0.113, op ROC-AUC=0.741, op+Forage ROC-AUC=0.742, increment=+0.002
+recovery_availability_x0.50: severe=0.126, op ROC-AUC=0.803, op+Forage ROC-AUC=0.798, increment=-0.005
+recovery_availability_x0.75: severe=0.091, op ROC-AUC=0.794, op+Forage ROC-AUC=0.784, increment=-0.010
+recovery_availability_x1.00: severe=0.074, op ROC-AUC=0.783, op+Forage ROC-AUC=0.778, increment=-0.005
+recovery_availability_x1.50: severe=0.058, op ROC-AUC=0.746, op+Forage ROC-AUC=0.738, increment=-0.007
+recovery_availability_x2.00: severe=0.052, op ROC-AUC=0.741, op+Forage ROC-AUC=0.714, increment=-0.027
+severity_balanced: severe=0.073, op ROC-AUC=0.760, op+Forage ROC-AUC=0.763, increment=+0.003
+severity_weather_heavy: severe=0.071, op ROC-AUC=0.774, op+Forage ROC-AUC=0.767, increment=-0.008
+severity_atc_heavy: severe=0.074, op ROC-AUC=0.779, op+Forage ROC-AUC=0.765, increment=-0.013
+severity_airport_heavy: severe=0.072, op ROC-AUC=0.760, op+Forage ROC-AUC=0.756, increment=-0.004
+severity_inbound_heavy: severe=0.075, op ROC-AUC=0.774, op+Forage ROC-AUC=0.760, increment=-0.013
+
+SANITY CHECKS
+baseline_v02: buffer_monotonic=True; expected_alt_monotonic=True
+recovery_availability_x0.50: buffer_monotonic=True; expected_alt_monotonic=True
+recovery_availability_x0.75: buffer_monotonic=True; expected_alt_monotonic=True
+recovery_availability_x1.00: buffer_monotonic=True; expected_alt_monotonic=True
+recovery_availability_x1.50: buffer_monotonic=True; expected_alt_monotonic=True
+recovery_availability_x2.00: buffer_monotonic=True; expected_alt_monotonic=True
+severity_balanced: buffer_monotonic=True; expected_alt_monotonic=True
+severity_weather_heavy: buffer_monotonic=True; expected_alt_monotonic=True
+severity_atc_heavy: buffer_monotonic=True; expected_alt_monotonic=True
+severity_airport_heavy: buffer_monotonic=True; expected_alt_monotonic=True
+severity_inbound_heavy: buffer_monotonic=True; expected_alt_monotonic=True

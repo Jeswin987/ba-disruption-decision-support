@@ -1,0 +1,358 @@
+{
+  "baseline": {
+    "scenario": "baseline_v02",
+    "rows": 9951,
+    "miss_rate": 0.5125113053964425,
+    "severe_rate": 0.11295347201286303,
+    "same_day_recovery_among_missed": 0.779607843137255,
+    "Operational_roc_auc": 0.7412311147080558,
+    "Operational_pr_auc": 0.21700767639883037,
+    "Operational_brier": 0.21171961775149625,
+    "Operational+Forage_roc_auc": 0.7427329812450618,
+    "Operational+Forage_pr_auc": 0.21783688529120776,
+    "Operational+Forage_brier": 0.20737873110686214,
+    "notes": "Original v0.2 mechanism; fixed event split.",
+    "incremental_roc_auc": 0.0015018665370060136,
+    "incremental_pr_auc": 0.0008292088923773921
+  },
+  "forecast_error_range": [
+    {
+      "scenario": "forecast_error_sigma_10min",
+      "severe_rate": 0.11295347201286303,
+      "Operational_roc_auc": 0.7536954873628887,
+      "Operational_pr_auc": 0.21852812603651248,
+      "Operational+Forage_roc_auc": 0.7559682800669201,
+      "Operational+Forage_pr_auc": 0.22409458184917305,
+      "incremental_roc_auc": 0.0022727927040313567,
+      "incremental_pr_auc": 0.005566455812660576
+    },
+    {
+      "scenario": "forecast_error_sigma_25min",
+      "severe_rate": 0.11295347201286303,
+      "Operational_roc_auc": 0.7426050266945181,
+      "Operational_pr_auc": 0.21867905366651813,
+      "Operational+Forage_roc_auc": 0.744202859144432,
+      "Operational+Forage_pr_auc": 0.21884701065292822,
+      "incremental_roc_auc": 0.0015978324499138497,
+      "incremental_pr_auc": 0.00016795698641008938
+    },
+    {
+      "scenario": "forecast_error_sigma_40min",
+      "severe_rate": 0.11295347201286303,
+      "Operational_roc_auc": 0.7432224074008913,
+      "Operational_pr_auc": 0.21715110030025586,
+      "Operational+Forage_roc_auc": 0.7448554273522046,
+      "Operational+Forage_pr_auc": 0.21829802391374295,
+      "incremental_roc_auc": 0.0016330199513132637,
+      "incremental_pr_auc": 0.0011469236134870886
+    },
+    {
+      "scenario": "forecast_error_sigma_60min",
+      "severe_rate": 0.11295347201286303,
+      "Operational_roc_auc": 0.7405657510452288,
+      "Operational_pr_auc": 0.21785686800403395,
+      "Operational+Forage_roc_auc": 0.7421731800864333,
+      "Operational+Forage_pr_auc": 0.21801932374565047,
+      "incremental_roc_auc": 0.0016074290412044778,
+      "incremental_pr_auc": 0.00016245574161652399
+    }
+  ],
+  "recovery_availability_range": [
+    {
+      "scenario": "recovery_availability_x0.50",
+      "severe_rate": 0.125515023615717,
+      "Operational_roc_auc": 0.8028625122562371,
+      "Operational_pr_auc": 0.33961968298241557,
+      "Operational+Forage_roc_auc": 0.7977884301122127,
+      "Operational+Forage_pr_auc": 0.3385640236354509,
+      "incremental_roc_auc": -0.005074082144024383,
+      "incremental_pr_auc": -0.0010556593469646658
+    },
+    {
+      "scenario": "recovery_availability_x0.75",
+      "severe_rate": 0.09084514119184002,
+      "Operational_roc_auc": 0.7938212468902008,
+      "Operational_pr_auc": 0.2787136386920574,
+      "Operational+Forage_roc_auc": 0.7840406965950021,
+      "Operational+Forage_pr_auc": 0.2771755045765018,
+      "incremental_roc_auc": -0.009780550295198753,
+      "incremental_pr_auc": -0.0015381341155555894
+    },
+    {
+      "scenario": "recovery_availability_x1.00",
+      "severe_rate": 0.07396241583760427,
+      "Operational_roc_auc": 0.7829443986229648,
+      "Operational_pr_auc": 0.22847045751816883,
+      "Operational+Forage_roc_auc": 0.778387900738722,
+      "Operational+Forage_pr_auc": 0.22092022623939284,
+      "incremental_roc_auc": -0.004556497884242838,
+      "incremental_pr_auc": -0.007550231278775993
+    },
+    {
+      "scenario": "recovery_availability_x1.50",
+      "severe_rate": 0.058185107024419654,
+      "Operational_roc_auc": 0.7455669914180131,
+      "Operational_pr_auc": 0.13628502313549576,
+      "Operational+Forage_roc_auc": 0.7383165867513667,
+      "Operational+Forage_pr_auc": 0.11998267627648956,
+      "incremental_roc_auc": -0.007250404666646393,
+      "incremental_pr_auc": -0.016302346859006195
+    },
+    {
+      "scenario": "recovery_availability_x2.00",
+      "severe_rate": 0.05205506984222691,
+      "Operational_roc_auc": 0.7414400949670332,
+      "Operational_pr_auc": 0.10646900475531013,
+      "Operational+Forage_roc_auc": 0.714462449405741,
+      "Operational+Forage_pr_auc": 0.09859282756318713,
+      "incremental_roc_auc": -0.02697764556129223,
+      "incremental_pr_auc": -0.007876177192122996
+    }
+  ],
+  "severity_range": [
+    {
+      "scenario": "severity_balanced",
+      "miss_rate": 0.5197467591196865,
+      "severe_rate": 0.0734599537734901,
+      "Operational_roc_auc": 0.760285810448182,
+      "Operational_pr_auc": 0.17289116995453832,
+      "Operational+Forage_roc_auc": 0.7632398824738704,
+      "Operational+Forage_pr_auc": 0.18305618394099019,
+      "incremental_roc_auc": 0.0029540720256884256,
+      "incremental_pr_auc": 0.010165013986451865
+    },
+    {
+      "scenario": "severity_weather_heavy",
+      "miss_rate": 0.4971359662345493,
+      "severe_rate": 0.07145010551703346,
+      "Operational_roc_auc": 0.7742517681846637,
+      "Operational_pr_auc": 0.208560896898489,
+      "Operational+Forage_roc_auc": 0.7665552255240174,
+      "Operational+Forage_pr_auc": 0.19313501070808745,
+      "incremental_roc_auc": -0.007696542660646233,
+      "incremental_pr_auc": -0.015425886190401555
+    },
+    {
+      "scenario": "severity_atc_heavy",
+      "miss_rate": 0.5121093357451513,
+      "severe_rate": 0.0737614310119586,
+      "Operational_roc_auc": 0.7786197047292442,
+      "Operational_pr_auc": 0.19241485446517814,
+      "Operational+Forage_roc_auc": 0.7653161471077838,
+      "Operational+Forage_pr_auc": 0.19809404819947596,
+      "incremental_roc_auc": -0.013303557621460405,
+      "incremental_pr_auc": 0.005679193734297816
+    },
+    {
+      "scenario": "severity_airport_heavy",
+      "miss_rate": 0.5181388805145212,
+      "severe_rate": 0.07215355240679329,
+      "Operational_roc_auc": 0.7604696376843454,
+      "Operational_pr_auc": 0.1740458242039873,
+      "Operational+Forage_roc_auc": 0.7560731958712527,
+      "Operational+Forage_pr_auc": 0.17426003991179145,
+      "incremental_roc_auc": -0.004396441813092733,
+      "incremental_pr_auc": 0.0002142157078041662
+    },
+    {
+      "scenario": "severity_inbound_heavy",
+      "miss_rate": 0.5267812280172847,
+      "severe_rate": 0.07506783237865541,
+      "Operational_roc_auc": 0.7737709671663098,
+      "Operational_pr_auc": 0.19600072421437162,
+      "Operational+Forage_roc_auc": 0.7603965917201998,
+      "Operational+Forage_pr_auc": 0.19454317910377153,
+      "incremental_roc_auc": -0.013374375446109976,
+      "incremental_pr_auc": -0.0014575451106000892
+    }
+  ],
+  "sanity": [
+    {
+      "scenario": "baseline_v02",
+      "buffer_q1_to_q4": [
+        0.22347266881028938,
+        0.16278135048231512,
+        0.06473663047848814,
+        0.0008038585209003215
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.15193798449612403,
+        0.09970588235294117,
+        0.09888800635424941,
+        0.09910529938059189
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "recovery_availability_x0.50",
+      "buffer_q1_to_q4": [
+        0.2335209003215434,
+        0.1864951768488746,
+        0.0792119018898271,
+        0.0028135048231511255
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.2317829457364341,
+        0.11029411764705882,
+        0.07426528991262907,
+        0.06125258086717137
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "recovery_availability_x0.75",
+      "buffer_q1_to_q4": [
+        0.1772508038585209,
+        0.12982315112540194,
+        0.05548854041013269,
+        0.0008038585209003215
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.17790697674418604,
+        0.0688235294117647,
+        0.05242255758538523,
+        0.05437026841018582
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "recovery_availability_x1.00",
+      "buffer_q1_to_q4": [
+        0.1434887459807074,
+        0.10610932475884244,
+        0.045838359469240045,
+        0.00040192926045016077
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.14147286821705427,
+        0.05235294117647059,
+        0.04765687053216839,
+        0.05024088093599449
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "recovery_availability_x1.50",
+      "buffer_q1_to_q4": [
+        0.11173633440514469,
+        0.08360128617363344,
+        0.0365902694008846,
+        0.0008038585209003215
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.1,
+        0.043823529411764706,
+        0.04249404289118348,
+        0.044735030970406056
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "recovery_availability_x2.00",
+      "buffer_q1_to_q4": [
+        0.09847266881028939,
+        0.08118971061093247,
+        0.028548451950140732,
+        0.0
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.08294573643410853,
+        0.04205882352941177,
+        0.03852263701350278,
+        0.0440467997247075
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "severity_balanced",
+      "buffer_q1_to_q4": [
+        0.13504823151125403,
+        0.11173633440514469,
+        0.04664254121431444,
+        0.00040192926045016077
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.1310077519379845,
+        0.058823529411764705,
+        0.04765687053216839,
+        0.05024088093599449
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "severity_weather_heavy",
+      "buffer_q1_to_q4": [
+        0.14389067524115756,
+        0.10168810289389067,
+        0.039806996381182146,
+        0.00040192926045016077
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.1310077519379845,
+        0.05588235294117647,
+        0.04765687053216839,
+        0.043358568479008944
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "severity_atc_heavy",
+      "buffer_q1_to_q4": [
+        0.1370578778135048,
+        0.10811897106109325,
+        0.04945717732207479,
+        0.00040192926045016077
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.14263565891472868,
+        0.052647058823529415,
+        0.04805401111993646,
+        0.04542326221610461
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "severity_airport_heavy",
+      "buffer_q1_to_q4": [
+        0.14389067524115756,
+        0.10329581993569131,
+        0.04101326899879373,
+        0.00040192926045016077
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.13798449612403102,
+        0.04941176470588235,
+        0.050833995234312944,
+        0.04542326221610461
+      ],
+      "expected_alt_monotonic_decreasing": true
+    },
+    {
+      "scenario": "severity_inbound_heavy",
+      "buffer_q1_to_q4": [
+        0.1422829581993569,
+        0.11294212218649517,
+        0.04503417772416566,
+        0.0
+      ],
+      "buffer_monotonic_decreasing": true,
+      "expected_alt_q1_to_q4": [
+        0.13837209302325582,
+        0.05588235294117647,
+        0.050833995234312944,
+        0.04955264969029594
+      ],
+      "expected_alt_monotonic_decreasing": true
+    }
+  ]
+}

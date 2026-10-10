@@ -1,0 +1,16 @@
+{
+  "events": 10000,
+  "passenger_rows": 100072,
+  "min_passengers_per_event": 5,
+  "max_passengers_per_event": 15,
+  "target_rate": 0.10332560556399392,
+  "connection_miss_rate": 0.48519066272283956,
+  "same_day_recovery_among_missed": 0.7870412324422292,
+  "forecast_mae_minutes": 18.610439235937378,
+  "shared_event_ids_between_train_test": 0,
+  "missing_values": 60694,
+  "visible_model_missing_values": 0,
+  "target_missing_values": 0,
+  "hidden_missing_values": 60694,
+  "best_recovery_missing_only_when_no_recovery_or_no_miss": true
+}

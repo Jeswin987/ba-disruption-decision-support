@@ -1,0 +1,31 @@
+﻿# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Temporary cleanup inventory
+cleanup_inventory.csv
+
+# Historical RAG exploration — keep locally, exclude from Git
+/RAG_Composition_Prototype.ipynb
+/RAG_Live_Integration.ipynb
+/RAG_Prototype.ipynb
+/knowledge_base/
+
+# Separate booking-prediction task — keep locally
+/Task2_Booking_Prediction_Analysis.ipynb
+/customer_booking.csv
+
+# Model artifact pending provenance review
+/model_artifacts/
