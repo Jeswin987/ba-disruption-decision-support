@@ -21,3 +21,23 @@ The original v0.3 generator, original model-training scripts/hyperparameters, an
 
 ## Environment note
 `pip_freeze_current_environment.txt` is the exact environment snapshot of the current execution environment, not a historical freeze of the environment that originally generated v0.3. The historical environment version set was not saved with the artifacts.
+
+### Environment and dependencies
+
+The follow-up analysis scripts were tested using Python 3.13.7 and the dependency versions pinned in `requirements.txt`.
+
+These pins document the current follow-up analysis environment. They do not establish or reproduce the historical v0.3 model-training environment. The original data generator and model-training source were not recovered, so exact historical environment reproducibility cannot be claimed.
+
+To install the listed dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+To check dependency compatibility:
+
+```bash
+python -m pip check
+```
+
+The current environment check returned `No broken requirements found.` This confirms package dependency consistency in the tested environment, not reproducibility of the original training pipeline.
