@@ -1,0 +1,10 @@
+{
+  "rows_audited": 100072,
+  "exceptions": 316,
+  "exception_percentage": 0.3158,
+  "stored_missed_count": 48554,
+  "rule_missed_count": 48870,
+  "stored_missed_rule_not_missed": 0,
+  "stored_not_missed_rule_missed": 316,
+  "interpretation": "The rule is inferred. Exceptions do not establish which label is wrong because the original generator logic is unavailable."
+}

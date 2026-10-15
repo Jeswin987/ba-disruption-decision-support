@@ -1,0 +1,125 @@
+{
+  "audit": "BA Disruption v0.3",
+  "read_only": true,
+  "checks": [
+    {
+      "check": "Event row count",
+      "status": "PASS",
+      "detail": "10000"
+    },
+    {
+      "check": "Passenger row count",
+      "status": "PASS",
+      "detail": "100072"
+    },
+    {
+      "check": "Event required columns",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Passenger required columns",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Event IDs unique",
+      "status": "PASS",
+      "detail": "Unique=10000, rows=10000"
+    },
+    {
+      "check": "Passenger IDs unique",
+      "status": "PASS",
+      "detail": "Unique=100072, rows=100072"
+    },
+    {
+      "check": "Event IDs non-null",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "Passenger IDs non-null",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "check": "Passenger event references valid",
+      "status": "PASS",
+      "detail": "Unknown event IDs=0"
+    },
+    {
+      "check": "Every event has passengers",
+      "status": "PASS",
+      "detail": "Events without passengers=0"
+    },
+    {
+      "check": "5\u201315 passengers per event",
+      "status": "PASS",
+      "detail": "Min=5, max=15, violations=0"
+    },
+    {
+      "check": "weather_severity values in 0\u20133",
+      "status": "PASS",
+      "detail": "[np.int64(0), np.int64(1), np.int64(2), np.int64(3)]"
+    },
+    {
+      "check": "atc_restriction values in 0\u20133",
+      "status": "PASS",
+      "detail": "[np.int64(0), np.int64(1), np.int64(2), np.int64(3)]"
+    },
+    {
+      "check": "airport_congestion within [0, 1]",
+      "status": "PASS",
+      "detail": "Missing/non-numeric=0, min=0.0171660693612796, max=0.9707059695167496"
+    },
+    {
+      "check": "inbound_operational_pressure within [0, 1]",
+      "status": "PASS",
+      "detail": "Missing/non-numeric=0, min=0.008402767166955, max=0.9856724746045004"
+    },
+    {
+      "check": "Model features have no missing values",
+      "status": "PASS",
+      "detail": "{}"
+    },
+    {
+      "check": "Target matches frozen Boolean rule",
+      "status": "PASS",
+      "detail": "Mismatched rows=0"
+    },
+    {
+      "check": "Training split has 7,500 events",
+      "status": "PASS",
+      "detail": "7500"
+    },
+    {
+      "check": "Test split has 2,500 events",
+      "status": "PASS",
+      "detail": "2500"
+    },
+    {
+      "check": "No train/test event overlap",
+      "status": "PASS",
+      "detail": "Shared IDs=0"
+    },
+    {
+      "check": "Split covers all dataset events",
+      "status": "PASS",
+      "detail": "Missing=0, unknown=0"
+    }
+  ],
+  "summary": {
+    "passed": 21,
+    "failed": 0,
+    "total": 21
+  },
+  "passenger_missingness_by_column": {
+    "best_recovery_arrival_minutes": 60694
+  },
+  "not_verified": [
+    "Original generator implementation and random draw sequence",
+    "Whether generation followed every intended rule",
+    "Recovery clock semantics and the documented discrepancy",
+    "Whether the original training code used only approved features"
+  ]
+}
