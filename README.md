@@ -1,5 +1,14 @@
 # Connection-disruption risk ranking: synthetic decision-support prototype (v0.3)
 
+## In short
+
+This prototype asks one question: **when a flight disruption leaves limited staff to help passengers, who should be helped first?**
+
+- **Data:** 10,000 simulated disruption events with 100,072 affected passenger itineraries. It uses no real airline data.
+- **Method:** each passenger is ranked by risk of a "severe connection disruption". A simple rule, logistic regression, and gradient boosting (HGB) are compared. Train and test sets are split by event, so no event appears in both.
+- **Main result:** if staff can help the top 10% of ranked passengers, HGB finds about 33% of severe cases. The simple rule finds about 22%, and random picking finds about 10%. HGB's edge over logistic regression is small.
+- **Limits:** the data is synthetic, the models mostly learn the rules of the simulator (especially the connection buffer), the original generator code was not recovered, and the test set was inspected during development. These results say nothing about real airline performance.
+
 > **Scope:** This is an educational prototype built from synthetic data. It is not a British Airways system, does not use British Airways operational data, and does not demonstrate performance on real airline disruptions.
 
 ## Project overview
