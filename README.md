@@ -151,6 +151,8 @@ The original data generator, the original model-training code, the exact origina
 - **Capacity policy:** the reported prioritization uses a global passenger-capacity percentage; it does not establish how capacity should be allocated in live operations.
 - **Operational use:** this prototype does not account for all real-world constraints, including seat contention, accessibility needs, passenger-specific circumstances, legal rights, fairness, or human decision-making requirements. It should not be used to make real passenger decisions.
 
+- **Booking-style fields:** the data includes contextual fields inspired by the original Forage booking dataset (for example `purchase_lead`, `trip_type`, `booking_origin`). The primary model does not use them, and this repository does not include a test of whether they improve ranking. The redesigned problem uses a different data structure and target from the original booking task.
+
 ## Repository map
 
 ```text
