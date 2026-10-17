@@ -198,4 +198,4 @@ A successful dependency check verifies package consistency in that environment; 
 
 ## Licence
 
-No licence has been selected yet.
+Released under the MIT licence. See the [LICENSE](LICENSE) file.
