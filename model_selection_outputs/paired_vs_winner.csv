@@ -1,0 +1,5 @@
+winner,other,mean_difference,sd_of_differences,folds_winner_better,n_folds
+mlp_neural_network,hist_gradient_boosting,0.0016690519855609913,0.0032382798109558382,10,15
+mlp_neural_network,random_forest,0.0036971952830042844,0.002247747771310535,14,15
+mlp_neural_network,extra_trees,0.003914511543513551,0.0031693867648773,12,15
+mlp_neural_network,logistic_regression,0.013108711119110224,0.00483247056872688,15,15

@@ -29,3 +29,6 @@ cleanup_inventory.csv
 
 # Model artifact pending provenance review
 /model_artifacts/
+
+model_selection_outputs_quick/
+final_check_outputs_quick/

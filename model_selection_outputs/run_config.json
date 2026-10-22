@@ -1,0 +1,41 @@
+{
+  "features": [
+    "weather_severity",
+    "atc_restriction",
+    "airport_congestion",
+    "inbound_operational_pressure",
+    "forecast_delay_minutes",
+    "connection_buffer_minutes",
+    "expected_transfer_minutes",
+    "expected_alternative_flights",
+    "expected_recovery_options",
+    "number_of_connections"
+  ],
+  "capacities": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "seed": 42,
+  "quick": false,
+  "settings": {
+    "outer_splits": 5,
+    "repeats": 3,
+    "inner_splits": 3,
+    "n_iter": 12
+  },
+  "data": {
+    "train_events": 7500,
+    "train_rows": 74953,
+    "train_severe_rate": 0.1025442610702707,
+    "test_events_excluded": 2500
+  },
+  "versions": {
+    "python": "3.13.7",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  },
+  "winner_rule": "Highest average of mean capture (share of severe passengers found in the top 5%, 10%, 20% and 30% of the ranked queue, averaged over those four levels) across all outer folds. Higher score wins even if the gap is small."
+}

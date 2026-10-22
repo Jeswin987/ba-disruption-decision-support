@@ -1,0 +1,9 @@
+{
+  "winner": "mlp_neural_network",
+  "rule": "Highest average of mean capture (share of severe passengers found in the top 5%, 10%, 20% and 30% of the ranked queue, averaged over those four levels) across all outer folds. Higher score wins even if the gap is small.",
+  "winner_mean_capture": 0.45071176249505124,
+  "runner_up": "hist_gradient_boosting",
+  "lead_over_runner_up": 0.0016690519855609913,
+  "lead_smaller_than_fold_to_fold_spread": true,
+  "note": "If the lead is smaller than the fold-to-fold spread, report that the model was selected by a pre-set rule, not shown to be clearly better. Selecting among five models also makes the winner's cross-validated score slightly optimistic."
+}

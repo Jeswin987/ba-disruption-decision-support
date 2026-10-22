@@ -1,0 +1,7 @@
+{
+  "comparison": "mlp_neural_network minus hist_gradient_boosting (mean capture)",
+  "ci_low_2_5": 0.0025754714170089913,
+  "ci_high_97_5": 0.013346596002440023,
+  "share_of_resamples_winner_ahead": 0.999,
+  "replicates": 1000
+}
